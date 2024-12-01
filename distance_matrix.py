@@ -4,8 +4,8 @@ from Bio.Phylo.TreeConstruction import DistanceCalculator
 # Load the aligned sequences in FASTA format
 alignment = AlignIO.read("sequence.fasta", "fasta")
 
-# Create a DistanceCalculator object (using p-distance or another model)
-calculator = DistanceCalculator('identity')  # 'identity' is p-distance
+# Create a DistanceCalculator object
+calculator = DistanceCalculator('identity')  # 'identity' for p-distance
 distance_matrix = calculator.get_distance(alignment)
 
 # Convert the distance matrix to a formatted string with tabs
@@ -18,6 +18,7 @@ def distance_matrix_to_string_with_tabs(distance_matrix):
 
     # Add each row of the matrix
     for i, label in enumerate(labels):
+        # Use only numeric values from the matrix
         row = [f"{distance_matrix[label, other]:.6f}" for other in labels]
         result.append(f"{label}\t" + "\t".join(row))
 
