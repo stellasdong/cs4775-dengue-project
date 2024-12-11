@@ -7,21 +7,20 @@ def jc69_likelihood(tree, alignment, branch_lengths):
     """
     Compute the likelihood of the given tree under the JC69 model using
     Felsenstein's pruning algorithm.
-    
-    Parameters:
-    tree: dict
-        A dictionary representation of the tree structure.
-    alignment: dict
-        A dictionary of aligned sequences with IDs as keys.
-    branch_lengths: dict
-        A dictionary of branch lengths for each edge.
     """
-    num_sites = len(next(iter(alignment.values())))  # Length of sequences
+    num_sites = len(alignment[0])
     states = ['A', 'T', 'C', 'G']
     
-    # Placeholder for conditional probabilities
+    def jc_transition(i, j, branch_length):
+        """Compute the transition probability under JC69."""
+        if i == j:
+            return 0.25 + 0.75 * np.exp(-4 * branch_length / 3)
+        else:
+            return 0.25 - 0.25 * np.exp(-4 * branch_length / 3)
+    
     def conditional_prob(node, site):
         if node['is_leaf']:
+            # node['id'] is an integer index here
             return [1.0 if state == alignment[node['id']][site] else 0.0 for state in states]
         else:
             left = node['left']
@@ -34,15 +33,7 @@ def jc69_likelihood(tree, alignment, branch_lengths):
                 p_right = sum(right_probs[j] * jc_transition(state, states[j], branch_lengths[right['id']]) for j in range(4))
                 probs.append(p_left * p_right)
             return probs
-    
-    def jc_transition(i, j, branch_length):
-        """Compute the transition probability under JC69."""
-        if i == j:
-            return 0.25 + 0.75 * np.exp(-4 * branch_length / 3)
-        else:
-            return 0.25 - 0.25 * np.exp(-4 * branch_length / 3)
-    
-    # Root likelihood summation
+
     likelihood = 1.0
     for site in range(num_sites):
         root_probs = conditional_prob(tree['root'], site)
@@ -50,7 +41,6 @@ def jc69_likelihood(tree, alignment, branch_lengths):
     
     return likelihood
 
-# Generate an initial random tree
 def generate_random_tree(sequences):
     """Generate a random bifurcating tree."""
     n = len(sequences)
@@ -66,10 +56,9 @@ def generate_random_tree(sequences):
     
     return {'root': list(tree.values())[0]}
 
-# Apply a random tree modification (NNI, SPR, TBR)
+# Apply a random tree modification (NNI)
 def modify_tree(tree):
     """Randomly modify the tree using NNI."""
-    # Perform a nearest-neighbor interchange (NNI)
     def swap_subtrees(node):
         if node['is_leaf']:
             return
@@ -81,68 +70,42 @@ def modify_tree(tree):
     swap_subtrees(tree['root'])
     return tree
 
-# Function to replace numerical IDs with sequence names after tree is generated
 def replace_ids_with_names(tree, id_to_name_map):
-    """Replace numerical IDs in the tree with corresponding sequence names."""
+    """Replace integer IDs in leaf nodes with sequence names."""
     def traverse(node):
         if node['is_leaf']:
             node['id'] = id_to_name_map[node['id']]
         else:
             traverse(node['left'])
             traverse(node['right'])
-    
     traverse(tree['root'])
     return tree
 
-# Stochastic search algorithm
-def stochastic_search(alignment_dict, id_to_name_map, max_iterations=1000):
+def stochastic_search(alignment, max_iterations=1000):
     """Run the stochastic search algorithm."""
-    # Initialize the tree with numerical IDs
-    sequences = list(alignment_dict.values())
-    tree = generate_random_tree(sequences)
-    branch_lengths = {i: 0.1 for i in range(len(sequences) * 2 - 1)}  # Initialize branch lengths
+    tree = generate_random_tree(alignment)
+    branch_lengths = {i: 0.1 for i in range(len(alignment) * 2 - 1)}  # Initialize branch lengths
     best_tree = tree
     best_likelihood = -np.inf
-
+    
     for iteration in range(max_iterations):
         # Propose a new tree
         new_tree = modify_tree(tree)
         
         # Calculate likelihood
-        likelihood = jc69_likelihood(new_tree, alignment_dict, branch_lengths)
+        likelihood = jc69_likelihood(new_tree, alignment, branch_lengths)
         
         # Accept or reject the new tree
         if likelihood > best_likelihood:
             best_tree = new_tree
             best_likelihood = likelihood
         else:
-            # Optionally accept with a small probability (e.g., simulated annealing)
-            if np.random.rand() < 0.1:  # Tunable parameter
+            # Optionally accept with a small probability
+            if np.random.rand() < 0.1:
                 best_tree = new_tree
                 best_likelihood = likelihood
 
-    # Replace numerical IDs with sequence names
-    best_tree = replace_ids_with_names(best_tree, id_to_name_map)
-
     return best_tree
-
-# Example input: Multiple sequence alignment in dictionary format
-alignment_dict = {
-    1: "ATGCGATGCGTGGGAATAGGCAACAGAGACTTCGTTGAA...",
-    2: "ATGCGATGCGTGGGAATAGGCAACAGAGACTTCGTTGAA...",
-    3: "ATGCGATGCGTGGGAATAGGCAACAGAGACTTCGTTGAA..."
-}
-
-# Example dictionary to map numerical IDs to sequence names
-id_to_name_map = {
-    1: "seq1",
-    2: "seq2",
-    3: "seq3"
-}
-
-# Run the stochastic search
-best_tree = stochastic_search(alignment_dict, id_to_name_map)
-print("Best tree:", best_tree)
 
 def tree_to_newick(tree):
     def traverse(node):
@@ -153,6 +116,30 @@ def tree_to_newick(tree):
             right = traverse(node['right'])
             return f"({left},{right})"
     return traverse(tree['root']) + ";"
+
+###################################
+# Example usage
+###################################
+# Suppose you have a dictionary like this:
+alignment_dict = {
+    "seq1": "ATGCGATGCGTGGGAATAGGCAACAGAGACTTCGTTGAAGGACTGTCAGGAGCAACATGGGTGGATGTGGTACTGGAGCATGGAAGCTGCGTCACCACCATGGCAAAAAATAAACCAACATTGGACATTGAACTCTTGAAGACGGAGGTCACGAACCCTGCCGTCTTGCGCAAACTGTGCATTGAAGCTAAAATATCAAACACCACTACCGATTCAAGATGTCCAACACAAGGAGAAGCTACACTGGTGGAAGAACAAGACGCAAACTTTGTGTGTCGACGAACATTCGTGGACAGAGGCTGGGGTAATGGTTGTGGACTATTCGGGAAGGGAAGCTTACTAACGTGTGCTAAGTTTAAGTGTGTGACAAAACTTGAAGGAAAGATAGTTCAATATGAAAACTTAAAATATTCGGTGATAGTCACTGTCCACACTGGGGACCAGCACCAGGTAGGAAATGAAACTACAGAACATGGAACAATTGCAACCATAACACCTCAAGCTCCCACGTCGGAAATACAGCTGACTGACTACGGAGCCCTTACATTGGATTGCTCACCTAGAACAGGGCTGGACTTTAATGAGATGGTGCTGTTGACAATGAAAGAGAAATCATGGCTTGTCCACAAACAATGGTTTCTAGACTTACCATTGCCCTGGACCT",
+    "seq2": "ATGCGATGCGTGGGAATAGGCAACAGAGACTTCGTTGAAGGACTGTCAGGAGCAACATGGGTGGATGTGGTACTGGAGCATGGAAGCTGCGTCACCACCATGGCAAAAAATAAACCAACATTGGACATTGAACTCTTGAAGACGGAGGTCACGAACCCTGCCGTCTTGCGCAAACTGTGCATTGAAGCTAAAATATCAAACACCACTACCGATTCAAGATGTCCAACACAAGGAGAAGCTACACTGGTGGAAGAACAAGACGCAAACTTTGTGTGTCGACGAACATTCGTGGACAGAGGCTGGGGTAATGGTTGTGGACTATTCGGGAAGGGAAGCTTACTAACGTGTGCTAAGTTTAAGTGTGTGACAAAACTTGAAGGAAAGATAGTTCAATATGAAAACTTAAAATATTCGGTGATAGTCACTGTCCACACTGGGGACCAGCACCAGGTAGGAAATGAAACTACAGAACATGGAACAATTGCAACCATAACACCTCAAGCTCCCACGTCGGAAATACAGCTGACTGACTACGGAGCCCTTACATTGGATTGCTCACCTAGAACAGGGCTGGACTTTAATGAGATGGTGCTGTTGACAATGAAAGAGAAATCATGGCTTGTCCACAAACAATGGTTTCTAGACTTACCATTGCCCTGGACCT",
+    "seq3": "ATGCGATGCGTGGGAATAGGCAACAGAGACTTCGTTGAAGGACTGTCAGGAGCAACATGGGTGGATGTGGTACTGGAGCATGGAAGCTGCGTCACCACCATGGCAAAAAATAAACCAACATTGGACATTGAACTCTTGAAGACGGAGGTCACGAACCCTGCCGTCTTGCGCAAACTGTGCATTGAAGCTAAAATATCAAACACCACTACCGATTCAAGATGTCCAACACAAGGAGAAGCTACACTGGTGGAAGAACAAGACGCAAACTTTGTGTGTCGACGAACATTCGTGGACAGAGGCTGGGGTAATGGTTGTGGACTATTCGGGAAGGGAAGCTTACTAACGTGTGCTAAGTTTAAGTGTGTGACAAAACTTGAAGGAAAGATAGTTCAATATGAAAACTTAAAATATTCGGTGATAGTCACTGTCCACACTGGGGACCAGCACCAGGTAGGAAATGAAACTACAGAACATGGAACAATTGCAACCATAACACCTCAAGCTCCCACGTCGGAAATACAGCTGACTGACTACGGAGCCCTTACATTGGATTGCTCACCTAGAACAGGGCTGGACTTTAATGAGATGGTGCTGTTGACAATGAAAGAGAAATCATGGCTTGTCCACAAACAATGGTTTCTAGACTTACCATTGCCCTGGACCT"
+}
+
+# Create an alignment list from the values
+alignment = list(alignment_dict.values())
+
+# Create a map from integer ID to sequence name based on order
+id_to_name_map = {i: name for i, name in enumerate(alignment_dict.keys())}
+
+# Run the stochastic search
+best_tree = stochastic_search(alignment)
+
+# Replace IDs with names
+best_tree = replace_ids_with_names(best_tree, id_to_name_map)
+
+print("Best tree with sequence IDs:", best_tree)
 
 # Convert the tree to Newick format
 newick_tree = tree_to_newick(best_tree)
