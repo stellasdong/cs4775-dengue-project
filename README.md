@@ -22,7 +22,7 @@ Biopython
 
   To install Biopython, run:
 
-  pip install biopython
+    pip install biopython
   
 ClustalW and IQ-TREE
   
@@ -37,13 +37,13 @@ Input Files
 
   The script processes FASTA files and expects them to be properly formatted. Example FASTA files include:
   
-  serotype_1.fasta
+    serotype_1.fasta
   
-  serotype_3.fasta
+    serotype_3.fasta
   
-  serotype_3_2017.fasta
+    serotype_3_2017.fasta
   
-  serotype_3_2018.fasta
+    serotype_3_2018.fasta
 
 
 Workflow:
@@ -54,13 +54,13 @@ Alignment with ClustalW
 Tree Construction with IQ-TREE
   The aligned files are processed with IQ-TREE using the following command:
 
-  iqtree2 -s <aligned_file.fasta> -m MFP
+    iqtree2 -s <aligned_file.fasta> -m MFP
 
   This generates Newick-formatted tree files. Example output files:
 
-  tree_1.txt
+    tree_1.txt
   
-  tree_3.txt
+    tree_3.txt
 
 
 Newick to ASCII Tree Conversion:
@@ -72,7 +72,7 @@ Running the Script
   
   Example:
   
-  python script.py input_file.fasta
+    python script.py input_file.fasta
 
 Output
 
