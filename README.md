@@ -1,4 +1,4 @@
-Tree Generator and Visualizer
+Comparison of Dengue Variants via Phylogenetic Organization
 
 This Python repo processes FASTA files, aligns them using ClustalW, builds phylogenetic trees using IQ-TREE, converts the resulting Newick-formatted tree files into ASCII trees, and saves the ASCII representations to text files. The script uses the Biopython library for tree parsing and rendering.
 
