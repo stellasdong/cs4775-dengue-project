@@ -4,6 +4,7 @@ This Python script processes FASTA files, aligns them using ClustalW, builds phy
 
 
 
+
 Dependencies:
 
 1. Python 3.6 or higher
@@ -14,7 +15,10 @@ Dependencies:
 
 4. IQ-TREE software
 
+
+
    
+
 
 Installation:
 
@@ -31,6 +35,10 @@ ClustalW and IQ-TREE
   IQ-TREE: Download and install from the official site.
   
 
+
+
+
+
 Usage:
 
 Input Files
@@ -44,6 +52,10 @@ Input Files
     serotype_3_2017.fasta
   
     serotype_3_2018.fasta
+
+
+
+
 
 
 Workflow:
@@ -61,6 +73,10 @@ Tree Construction with IQ-TREE
     tree_1.txt
   
     tree_3.txt
+
+
+
+
 
 
 Newick to ASCII Tree Conversion:
