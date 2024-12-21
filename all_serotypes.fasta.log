@@ -1,0 +1,48 @@
+IQ-TREE multicore version 2.3.6 for MacOS ARM 64-bit built Aug  1 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    Stellas-MacBook-Pro-2.local (SSE4.2, 8 GB RAM)
+Command: iqtree2 -s all_serotypes.fasta
+Seed:    452146 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Dec 21 17:33:21 2024
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file all_serotypes.fasta ... Fasta format detected
+Reading fasta file: done in 0.00534892 secs using 81.53% CPU
+ERROR: Sequence OM920035.1 contains not enough characters (1479)
+ERROR: Sequence OM920036.1 contains not enough characters (1479)
+ERROR: Sequence OM920037.1 contains not enough characters (1479)
+ERROR: Sequence OM920038.1 contains not enough characters (1479)
+ERROR: Sequence OM920039.1 contains not enough characters (1479)
+ERROR: Sequence OM920040.1 contains not enough characters (1479)
+ERROR: Sequence OM920041.1 contains not enough characters (1479)
+ERROR: Sequence OM920042.1 contains not enough characters (1479)
+ERROR: Sequence OM920043.1 contains not enough characters (1479)
+ERROR: Sequence OM920044.1 contains not enough characters (1479)
+ERROR: Sequence OM920045.1 contains not enough characters (1479)
+ERROR: Sequence OM920046.1 contains not enough characters (1479)
+ERROR: Sequence OM920047.1 contains not enough characters (1479)
+ERROR: Sequence OM920048.1 contains not enough characters (1479)
+ERROR: Sequence OM920049.1 contains not enough characters (1479)
+ERROR: Sequence OM920050.1 contains not enough characters (1479)
+ERROR: Sequence OM920051.1 contains not enough characters (1479)
+ERROR: Sequence OM920052.1 contains not enough characters (1479)
+ERROR: Sequence OM920053.1 contains not enough characters (1479)
+ERROR: Sequence OM920054.1 contains not enough characters (1479)
+ERROR: Sequence OM920055.1 contains not enough characters (1479)
+ERROR: Sequence OM920056.1 contains not enough characters (1479)
+ERROR: Sequence OM920057.1 contains not enough characters (1479)
+ERROR: Sequence OM920058.1 contains not enough characters (1479)
+ERROR: Sequence OM920059.1 contains not enough characters (1479)
+ERROR: Sequence OM920060.1 contains not enough characters (1479)
+ERROR: Sequence OM920061.1 contains not enough characters (1479)
+ERROR: Sequence OM920062.1 contains not enough characters (1479)
+ERROR: Sequence OM920063.1 contains not enough characters (1479)
+ERROR: Sequence OM920064.1 contains not enough characters (1479)
+ERROR: Sequence OM920065.1 contains not enough characters (1479)
+ERROR: Sequence OM920066.1 contains not enough characters (1479)
+ERROR: 

@@ -1,0 +1,733 @@
+IQ-TREE multicore version 2.3.6 for MacOS ARM 64-bit built Aug  1 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    Stellas-MacBook-Pro-2.local (SSE4.2, 8 GB RAM)
+Command: iqtree2 -s all_serotypes_aligned.fasta
+Seed:    986212 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Dec 21 17:43:47 2024
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file all_serotypes_aligned.fasta ... Fasta format detected
+Reading fasta file: done in 0.00510812 secs using 87.41% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 372 sequences with 1485 columns, 211 distinct patterns
+468 parsimony-informative, 56 singleton sites, 961 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 8.39233e-05 secs using 94.13% CPU
+   1  OM920145.1    0.00%    passed     99.97%
+   2  OM920350.1    0.00%    passed     99.73%
+   3  OM920105.1    0.00%    passed    100.00%
+   4  OM920124.1    0.00%    passed    100.00%
+   5  OM920369.1    0.00%    passed     99.96%
+   6  OM920367.1    0.00%    passed     99.99%
+   7  OM920368.1    0.00%    passed     99.96%
+   8  OM920359.1    0.00%    passed     99.96%
+   9  OM920396.1    0.00%    passed     99.99%
+  10  OM920088.1    0.00%    passed    100.00%
+  11  OM920130.1    0.00%    passed    100.00%
+  12  OM920181.1    0.00%    passed    100.00%
+  13  OM920238.1    0.00%    passed    100.00%
+  14  OM920357.1    0.00%    passed    100.00%
+  15  OM920239.1    0.00%    passed    100.00%
+  16  OM920354.1    0.00%    passed    100.00%
+  17  OM920358.1    0.00%    passed    100.00%
+  18  OM920365.1    0.00%    passed    100.00%
+  19  OM920366.1    0.00%    passed    100.00%
+  20  OM920371.1    0.00%    passed    100.00%
+  21  OM920373.1    0.00%    passed    100.00%
+  22  OM920381.1    0.00%    passed    100.00%
+  23  OM920393.1    0.00%    passed    100.00%
+  24  OM920394.1    0.00%    passed    100.00%
+  25  OM920395.1    0.00%    passed    100.00%
+  26  OM920397.1    0.00%    passed    100.00%
+  27  OM920398.1    0.00%    passed    100.00%
+  28  OM920400.1    0.00%    passed    100.00%
+  29  OM920415.1    0.00%    passed    100.00%
+  30  OM920080.1    0.00%    passed    100.00%
+  31  OM920084.1    0.00%    passed     99.73%
+  32  OM920242.1    0.00%    passed     99.90%
+  33  OM920091.1    0.00%    passed     99.97%
+  34  OM920235.1    0.07%    passed     99.98%
+  35  OM920292.1    0.00%    passed     99.86%
+  36  OM920233.1    0.00%    passed     99.86%
+  37  OM920176.1    0.00%    passed     99.91%
+  38  OM920347.1    0.00%    passed     99.86%
+  39  OM920111.1    0.00%    passed    100.00%
+  40  OM920216.1    0.00%    passed    100.00%
+  41  OM920219.1    0.00%    passed    100.00%
+  42  OM920293.1    0.00%    passed     99.97%
+  43  OM920406.1    0.07%    passed     99.98%
+  44  OM920112.1    0.00%    passed     99.97%
+  45  OM920082.1    0.00%    passed     99.97%
+  46  OM920237.1    0.00%    passed     99.97%
+  47  OM920103.1    0.00%    passed     99.97%
+  48  OM920083.1    0.00%    passed     99.97%
+  49  OM920079.1    0.00%    passed     99.97%
+  50  OM920317.1    0.00%    passed     99.97%
+  51  OM920318.1    0.00%    passed     99.97%
+  52  OM920113.1    0.00%    passed     99.97%
+  53  OM920131.1    0.00%    passed     99.97%
+  54  OM920132.1    0.00%    passed     99.97%
+  55  OM920261.1    0.00%    passed     99.97%
+  56  OM920314.1    0.00%    passed     99.97%
+  57  OM920332.1    0.00%    passed     99.97%
+  58  OM920137.1    0.00%    passed     99.97%
+  59  OM920277.1    0.00%    passed     99.97%
+  60  OM920174.1    0.00%    passed     99.97%
+  61  OM920303.1    0.00%    passed     99.97%
+  62  OM920180.1    0.00%    passed     99.97%
+  63  OM920320.1    0.00%    passed     99.97%
+  64  OM920255.1    0.00%    passed     99.97%
+  65  OM920223.1    0.00%    passed     99.97%
+  66  OM920321.1    0.00%    passed     99.97%
+  67  OM920283.1    0.00%    passed     99.97%
+  68  OM920251.1    0.00%    passed     99.97%
+  69  OM920252.1    0.00%    passed     99.97%
+  70  OM920258.1    0.00%    passed     99.97%
+  71  OM920269.1    0.00%    passed     99.97%
+  72  OM920323.1    0.00%    passed     99.97%
+  73  OM920309.1    0.00%    passed     99.97%
+  74  OM920270.1    0.00%    passed     99.97%
+  75  OM920341.1    0.00%    passed     99.97%
+  76  OM920077.1    0.00%    passed     99.97%
+  77  OM920160.1    0.00%    passed     99.97%
+  78  OM920279.1    0.00%    passed     99.97%
+  79  OM920087.1    0.00%    passed     99.97%
+  80  OM920115.1    0.00%    passed     99.97%
+  81  OM920118.1    0.00%    passed     99.97%
+  82  OM920139.1    0.00%    passed     99.97%
+  83  OM920162.1    0.00%    passed     99.97%
+  84  OM920187.1    0.00%    passed     99.97%
+  85  OM920191.1    0.00%    passed     99.97%
+  86  OM920297.1    0.00%    passed     99.97%
+  87  OM920327.1    0.00%    passed     99.97%
+  88  OM920401.1    0.00%    passed     99.97%
+  89  OM920153.1    0.00%    passed     99.91%
+  90  OM920154.1    0.00%    passed     99.91%
+  91  OM920146.1    0.00%    passed    100.00%
+  92  OM920134.1    0.07%    passed     99.95%
+  93  OM920173.1    0.00%    passed     99.91%
+  94  OM920234.1    0.00%    passed     99.91%
+  95  OM920250.1    0.00%    passed     99.91%
+  96  OM920287.1    0.00%    passed     99.91%
+  97  OM920294.1    0.00%    passed     99.91%
+  98  OM920356.1    0.00%    passed     99.91%
+  99  OM920405.1    0.07%    passed     99.95%
+ 100  OM920265.1    0.00%    passed     99.90%
+ 101  OM920333.1    0.00%    passed     99.91%
+ 102  OM920363.1    0.00%    passed     99.96%
+ 103  OM920196.1    0.00%    passed     99.91%
+ 104  OM920339.1    0.00%    passed     99.91%
+ 105  OM920148.1    0.00%    passed     99.86%
+ 106  OM920377.1    0.07%    passed     99.98%
+ 107  OM920407.1    0.07%    passed     99.97%
+ 108  OM920159.1    0.00%    passed     99.96%
+ 109  OM920296.1    0.00%    passed     99.96%
+ 110  OM920300.1    0.00%    passed     99.96%
+ 111  OM920267.1    0.07%    passed     99.70%
+ 112  OM920185.1    0.07%    passed     99.97%
+ 113  OM920338.1    0.00%    passed     99.73%
+ 114  OM920348.1    0.00%    passed     99.73%
+ 115  OM920114.1    0.00%    passed     99.73%
+ 116  OM920225.1    0.00%    passed     99.73%
+ 117  OM920271.1    0.00%    passed     99.77%
+ 118  OM920135.1    0.00%    passed     99.91%
+ 119  OM920308.1    0.00%    passed     99.91%
+ 120  OM920389.1    0.00%    passed     99.91%
+ 121  OM920313.1    0.00%    passed     99.35%
+ 122  OM920195.1    0.00%    passed     99.97%
+ 123  OM920200.1    0.00%    passed     99.97%
+ 124  OM920214.1    0.00%    passed     99.97%
+ 125  OM920230.1    0.00%    passed     99.97%
+ 126  OM920246.1    0.00%    passed     99.96%
+ 127  OM920304.1    0.00%    passed     99.96%
+ 128  OM920334.1    0.00%    passed     99.96%
+ 129  OM920352.1    0.00%    passed     99.86%
+ 130  OM920076.1    0.00%    passed     99.88%
+ 131  OM920215.1    0.00%    passed     99.88%
+ 132  OM920217.1    0.00%    passed     99.88%
+ 133  OM920240.1    0.00%    passed     99.88%
+ 134  OM920078.1    0.00%    passed     99.74%
+ 135  OM920128.1    0.00%    passed     95.59%
+ 136  OM920218.1    0.00%    passed     99.07%
+ 137  OM920226.1    0.00%    passed     99.85%
+ 138  OM920410.1    0.00%    passed     99.85%
+ 139  OM920177.1    0.00%    passed     99.86%
+ 140  OM920085.1    0.00%    passed     99.74%
+ 141  OM920129.1    0.00%    passed     99.96%
+ 142  OM920306.1    0.00%    passed     99.96%
+ 143  OM920110.1    0.00%    passed     99.63%
+ 144  OM920262.1    0.00%    passed     99.94%
+ 145  OM920328.1    0.00%    passed     99.96%
+ 146  OM920387.1    0.00%    passed     99.88%
+ 147  OM920096.1    0.00%    passed     99.94%
+ 148  OM920097.1    0.00%    passed     99.94%
+ 149  OM920163.1    0.00%    passed     99.85%
+ 150  OM920194.1    0.00%    passed     99.97%
+ 151  OM920107.1    0.00%    passed     99.88%
+ 152  OM920329.1    0.00%    passed     99.88%
+ 153  OM920152.1    0.00%    passed     99.88%
+ 154  OM920170.1    0.00%    passed     99.88%
+ 155  OM920282.1    0.00%    passed     99.88%
+ 156  OM920188.1    0.00%    passed     99.88%
+ 157  OM920286.1    0.00%    passed     99.88%
+ 158  OM920213.1    0.00%    passed     99.88%
+ 159  OM920295.1    0.00%    passed     99.88%
+ 160  OM920301.1    0.00%    passed     99.88%
+ 161  OM920316.1    0.00%    passed     99.88%
+ 162  OM920411.1    0.00%    passed     99.88%
+ 163  OM920199.1    0.07%    passed     99.91%
+ 164  OM920198.1    0.00%    passed     99.96%
+ 165  OM920351.1    0.00%    passed     99.96%
+ 166  OM920375.1    0.00%    passed     99.89%
+ 167  OM920374.1    0.07%    passed     99.91%
+ 168  OM920241.1    0.00%    passed     99.66%
+ 169  OM920311.1    0.00%    passed     99.96%
+ 170  OM920326.1    0.00%    passed     99.96%
+ 171  OM920117.1    0.00%    passed     99.96%
+ 172  OM920109.1    0.00%    passed     99.87%
+ 173  OM920168.1    0.00%    passed     99.97%
+ 174  OM920166.1    0.27%    passed     99.81%
+ 175  OM920179.1    0.00%    passed     99.97%
+ 176  OM920344.1    0.00%    passed     99.91%
+ 177  OM920285.1    0.00%    passed     99.97%
+ 178  OM920337.1    0.00%    passed     99.97%
+ 179  OM920388.1    0.00%    passed     99.97%
+ 180  OM920390.1    0.00%    passed     99.97%
+ 181  OM920335.1    0.00%    passed     99.91%
+ 182  OM920182.1    0.00%    passed     99.85%
+ 183  OM920099.1    0.07%    passed     99.97%
+ 184  OM920201.1    0.00%    passed     99.90%
+ 185  OM920312.1    0.00%    passed     99.97%
+ 186  OM920141.1    0.00%    passed     99.99%
+ 187  OM920156.1    0.13%    passed     99.95%
+ 188  OM920147.1    0.00%    passed     99.96%
+ 189  OM920310.1    0.00%    passed    100.00%
+ 190  OM920275.1    0.00%    passed     99.97%
+ 191  OM920244.1    0.00%    passed     99.93%
+ 192  OM920253.1    0.00%    passed     99.97%
+ 193  OM920189.1    0.00%    passed     99.97%
+ 194  OM920081.1    0.00%    passed     99.96%
+ 195  OM920408.1    0.00%    passed     99.96%
+ 196  OM920383.1    0.00%    passed     99.96%
+ 197  OM920136.1    0.00%    passed     99.96%
+ 198  OM920075.1    0.00%    passed     99.96%
+ 199  OM920086.1    0.00%    passed     99.96%
+ 200  OM920102.1    0.00%    passed     99.96%
+ 201  OM920345.1    0.00%    passed     99.96%
+ 202  OM920140.1    0.00%    passed     99.96%
+ 203  OM920355.1    0.00%    passed     99.96%
+ 204  OM920386.1    0.00%    passed     99.96%
+ 205  OM920254.1    0.00%    passed     99.96%
+ 206  OM920260.1    0.00%    passed     99.96%
+ 207  OM920402.1    0.00%    passed     99.96%
+ 208  OM920342.1    0.00%    passed     99.96%
+ 209  OM920403.1    0.00%    passed     99.96%
+ 210  OM920404.1    0.00%    passed     99.96%
+ 211  OM920276.1    0.00%    passed     99.96%
+ 212  OM920175.1    0.00%    passed     99.96%
+ 213  OM920151.1    0.00%    passed     99.96%
+ 214  OM920190.1    0.00%    passed     99.96%
+ 215  OM920211.1    0.00%    passed     99.96%
+ 216  OM920212.1    0.00%    passed     99.96%
+ 217  OM920384.1    0.00%    passed     99.97%
+ 218  OM920305.1    0.00%    passed     99.96%
+ 219  OM920324.1    0.00%    passed     99.96%
+ 220  OM920133.1    0.00%    passed     99.96%
+ 221  OM920158.1    0.00%    passed     99.96%
+ 222  OM920349.1    0.00%    passed     99.96%
+ 223  OM920104.1    0.00%    passed     99.96%
+ 224  OM920315.1    0.00%    passed     99.96%
+ 225  OM920089.1    0.00%    passed     99.96%
+ 226  OM920227.1    0.00%    passed     99.96%
+ 227  OM920236.1    0.00%    passed     99.96%
+ 228  OM920169.1    0.00%    passed     99.96%
+ 229  OM920165.1    0.00%    passed     99.96%
+ 230  OM920278.1    0.00%    passed     99.96%
+ 231  OM920289.1    0.00%    passed     99.96%
+ 232  OM920284.1    0.00%    passed     99.96%
+ 233  OM920229.1    0.00%    passed     99.96%
+ 234  OM920414.1    0.00%    passed     99.96%
+ 235  OM920093.1    0.00%    passed     99.96%
+ 236  OM920126.1    0.00%    passed     99.96%
+ 237  OM920272.1    0.00%    passed     99.96%
+ 238  OM920331.1    0.00%    passed     99.99%
+ 239  OM920209.1    0.00%    passed     99.96%
+ 240  OM920302.1    0.00%    passed     99.96%
+ 241  OM920220.1    0.00%    passed     99.96%
+ 242  OM920221.1    0.00%    passed     99.96%
+ 243  OM920207.1    0.00%    passed     99.96%
+ 244  OM920208.1    0.00%    passed     99.96%
+ 245  OM920205.1    0.00%    passed     99.96%
+ 246  OM920206.1    0.00%    passed     99.96%
+ 247  OM920203.1    0.00%    passed     99.96%
+ 248  OM920204.1    0.00%    passed     99.96%
+ 249  OM920193.1    0.00%    passed     99.96%
+ 250  OM920264.1    0.00%    passed     99.96%
+ 251  OM920171.1    0.00%    passed     99.96%
+ 252  OM920172.1    0.00%    passed     99.96%
+ 253  OM920143.1    0.00%    passed     99.96%
+ 254  OM920144.1    0.00%    passed     99.96%
+ 255  OM920142.1    0.00%    passed     99.96%
+ 256  OM920340.1    0.00%    passed     99.96%
+ 257  OM920120.1    0.00%    passed     99.96%
+ 258  OM920121.1    0.00%    passed     99.96%
+ 259  OM920119.1    0.00%    passed     99.96%
+ 260  OM920362.1    0.00%    passed     99.96%
+ 261  OM920100.1    0.00%    passed     99.96%
+ 262  OM920178.1    0.00%    passed     99.96%
+ 263  OM920108.1    0.07%    passed     99.91%
+ 264  OM920127.1    0.07%    passed     99.91%
+ 265  OM920228.1    0.00%    passed     99.97%
+ 266  OM920184.1    0.07%    passed     99.98%
+ 267  OM920248.1    0.00%    passed     99.99%
+ 268  OM920249.1    0.00%    passed     99.99%
+ 269  OM920280.1    0.00%    passed     99.99%
+ 270  OM920281.1    0.00%    passed     99.99%
+ 271  OM920325.1    0.13%    passed     99.95%
+ 272  OM920343.1    0.07%    passed     99.93%
+ 273  OM920116.1    0.00%    passed     99.99%
+ 274  OM920353.1    0.00%    passed     99.97%
+ 275  OM920138.1    0.00%    passed     99.84%
+ 276  OM920274.1    0.20%    passed     99.92%
+ 277  OM920245.1    0.00%    passed     99.74%
+ 278  OM920094.1    0.00%    passed     99.99%
+ 279  OM920288.1    0.00%    passed     99.99%
+ 280  OM920222.1    0.34%    passed     99.88%
+ 281  OM920232.1    0.00%    passed     99.91%
+ 282  OM920090.1    0.00%    passed     99.97%
+ 283  OM920231.1    0.07%    passed     99.93%
+ 284  OM920322.1    0.00%    passed     99.97%
+ 285  OM920307.1    0.00%    passed     99.73%
+ 286  OM920385.1    0.00%    passed     99.89%
+ 287  OM920192.1    0.00%    passed     99.85%
+ 288  OM920259.1    0.00%    passed     99.86%
+ 289  OM920106.1    0.00%    passed     99.97%
+ 290  OM920095.1    0.00%    passed     99.89%
+ 291  OM920186.1    0.00%    passed     99.89%
+ 292  OM920247.1    0.00%    passed     99.89%
+ 293  OM920263.1    0.00%    passed     99.89%
+ 294  OM920291.1    0.00%    passed     99.89%
+ 295  OM920319.1    0.00%    passed     99.89%
+ 296  OM920391.1    0.00%    passed     99.89%
+ 297  OM920330.1    0.00%    passed     99.89%
+ 298  OM920101.1    0.00%    passed     99.96%
+ 299  OM920157.1    0.00%    passed     99.96%
+ 300  OM920346.1    0.00%    passed     99.88%
+ 301  OM920243.1    0.00%    passed     99.88%
+ 302  OM920290.1    0.00%    passed     99.88%
+ 303  OM920299.1    0.00%    passed     99.88%
+ 304  OM920202.1    0.00%    passed     99.88%
+ 305  OM920125.1    0.00%    passed     99.85%
+ 306  OM920155.1    0.34%    passed     99.77%
+ 307  OM920412.1    0.34%    passed     99.77%
+ 308  OM920161.1    0.00%    passed     99.90%
+ 309  OM920149.1    0.00%    passed     99.97%
+ 310  OM920150.1    0.00%    passed     99.97%
+ 311  OM920164.1    0.00%    passed     99.97%
+ 312  OM920256.1    0.00%    passed     99.97%
+ 313  OM920413.1    0.00%    passed     99.97%
+ 314  OM920268.1    0.00%    passed    100.00%
+ 315  OM920298.1    0.00%    passed     99.86%
+ 316  OM920092.1    0.00%    passed     99.91%
+ 317  OM920336.1    0.13%    passed     99.93%
+ 318  OM920392.1    0.00%    passed     99.96%
+ 319  OM920197.1    0.00%    passed     99.88%
+ 320  OM920122.1    0.20%    passed     99.98%
+ 321  OM920123.1    0.27%    passed     99.98%
+ 322  OM920370.1    0.00%    passed     99.97%
+ 323  OM920409.1    0.07%    passed     99.99%
+ 324  OM920098.1    0.00%    passed     99.86%
+ 325  OM920183.1    0.07%    passed     99.98%
+ 326  OM920224.1    0.00%    passed     99.99%
+ 327  OM920273.1    0.00%    passed     99.99%
+ 328  OM920167.1    0.00%    passed     99.97%
+ 329  OM920364.1    0.00%    passed     99.96%
+ 330  OM920399.1    0.00%    passed     99.97%
+ 331  OM920266.1    0.00%    passed     99.99%
+ 332  OM920382.1    0.00%    passed    100.00%
+ 333  OM920360.1    0.00%    passed     99.96%
+ 334  OM920210.1    0.00%    passed     99.96%
+ 335  OM920376.1    0.00%    passed    100.00%
+ 336  OM920380.1    0.07%    passed    100.00%
+ 337  OM920372.1    0.00%    passed     99.96%
+ 338  OM920378.1    0.00%    passed     99.96%
+ 339  OM920361.1    0.00%    passed    100.00%
+ 340  OM920379.1    0.00%    passed     99.99%
+ 341  OM920038.1    0.40%    passed     82.69%
+ 342  OM920062.1    0.40%    passed     82.69%
+ 343  OM920052.1    0.40%    passed     78.91%
+ 344  OM920035.1    0.40%    passed     79.85%
+ 345  OM920036.1    0.40%    passed     83.00%
+ 346  OM920037.1    0.40%    passed     83.00%
+ 347  OM920061.1    0.40%    passed     83.00%
+ 348  OM920057.1    0.40%    passed     79.54%
+ 349  OM920060.1    0.40%    passed     79.54%
+ 350  OM920063.1    0.40%    passed     79.54%
+ 351  OM920040.1    0.40%    passed     79.85%
+ 352  OM920042.1    0.40%    passed     79.85%
+ 353  OM920043.1    0.40%    passed     79.85%
+ 354  OM920046.1    0.40%    passed     79.85%
+ 355  OM920044.1    0.40%    passed     79.84%
+ 356  OM920047.1    0.40%    passed     79.85%
+ 357  OM920050.1    0.40%    passed     78.61%
+ 358  OM920054.1    0.40%    passed     83.00%
+ 359  OM920056.1    0.40%    passed     79.85%
+ 360  OM920058.1    0.40%    passed     79.85%
+ 361  OM920059.1    0.40%    passed     79.85%
+ 362  OM920066.1    0.40%    passed     79.85%
+ 363  OM920048.1    0.40%    passed     83.00%
+ 364  OM920053.1    0.40%    passed     83.00%
+ 365  OM920041.1    0.47%    passed     79.43%
+ 366  OM920049.1    0.40%    passed     79.84%
+ 367  OM920045.1    0.40%    passed     83.88%
+ 368  OM920065.1    0.47%    passed     82.75%
+ 369  OM920039.1    0.47%    passed     78.95%
+ 370  OM920064.1    0.40%    passed     78.91%
+ 371  OM920051.1    0.40%    passed     74.60%
+ 372  OM920055.1    0.47%    passed     77.05%
+****  TOTAL         0.05%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: OM920124.1 is identical to OM920105.1 but kept for subsequent analysis
+NOTE: OM920130.1 is identical to OM920088.1 but kept for subsequent analysis
+NOTE: OM920216.1 is identical to OM920111.1 but kept for subsequent analysis
+NOTE: OM920082.1 is identical to OM920112.1 but kept for subsequent analysis
+NOTE: OM920154.1 is identical to OM920153.1 but kept for subsequent analysis
+NOTE: OM920234.1 is identical to OM920173.1 but kept for subsequent analysis
+NOTE: OM920339.1 is identical to OM920196.1 but kept for subsequent analysis
+NOTE: OM920300.1 is identical to OM920296.1 but kept for subsequent analysis
+NOTE: OM920348.1 is identical to OM920338.1 but kept for subsequent analysis
+NOTE: OM920308.1 is identical to OM920135.1 but kept for subsequent analysis
+NOTE: OM920200.1 is identical to OM920195.1 but kept for subsequent analysis
+NOTE: OM920304.1 is identical to OM920246.1 but kept for subsequent analysis
+NOTE: OM920215.1 is identical to OM920076.1 but kept for subsequent analysis
+NOTE: OM920410.1 is identical to OM920226.1 but kept for subsequent analysis
+NOTE: OM920306.1 is identical to OM920129.1 but kept for subsequent analysis
+NOTE: OM920097.1 is identical to OM920096.1 but kept for subsequent analysis
+NOTE: OM920329.1 is identical to OM920107.1 but kept for subsequent analysis
+NOTE: OM920326.1 is identical to OM920311.1 but kept for subsequent analysis
+NOTE: OM920285.1 is identical to OM920179.1 but kept for subsequent analysis
+NOTE: OM920408.1 is identical to OM920081.1 but kept for subsequent analysis
+NOTE: OM920127.1 is identical to OM920108.1 but kept for subsequent analysis
+NOTE: OM920249.1 is identical to OM920248.1 but kept for subsequent analysis
+NOTE: OM920281.1 is identical to OM920280.1 but kept for subsequent analysis
+NOTE: OM920288.1 is identical to OM920094.1 but kept for subsequent analysis
+NOTE: OM920186.1 is identical to OM920095.1 but kept for subsequent analysis
+NOTE: OM920299.1 is identical to OM920290.1 but kept for subsequent analysis
+NOTE: OM920412.1 is identical to OM920155.1 but kept for subsequent analysis
+NOTE: OM920150.1 is identical to OM920149.1 but kept for subsequent analysis
+NOTE: OM920273.1 is identical to OM920224.1 but kept for subsequent analysis
+NOTE: OM920062.1 is identical to OM920038.1 but kept for subsequent analysis
+NOTE: OM920037.1 is identical to OM920036.1 but kept for subsequent analysis
+NOTE: OM920060.1 is identical to OM920057.1 but kept for subsequent analysis
+NOTE: OM920042.1 is identical to OM920040.1 but kept for subsequent analysis
+NOTE: 168 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: OM920181.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920238.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920357.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920239.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920354.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920358.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920365.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920366.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920371.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920373.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920381.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920393.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920394.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920395.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920397.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920398.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920400.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920415.1 (identical to OM920088.1) is ignored but added at the end
+NOTE: OM920219.1 (identical to OM920111.1) is ignored but added at the end
+NOTE: OM920237.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920103.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920083.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920079.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920317.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920318.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920113.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920131.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920132.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920261.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920314.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920332.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920137.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920277.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920174.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920303.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920180.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920320.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920255.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920223.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920321.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920283.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920251.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920252.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920258.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920269.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920323.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920309.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920270.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920341.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920077.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920160.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920279.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920087.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920115.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920118.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920139.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920162.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920187.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920191.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920297.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920327.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920401.1 (identical to OM920112.1) is ignored but added at the end
+NOTE: OM920250.1 (identical to OM920173.1) is ignored but added at the end
+NOTE: OM920287.1 (identical to OM920173.1) is ignored but added at the end
+NOTE: OM920294.1 (identical to OM920173.1) is ignored but added at the end
+NOTE: OM920356.1 (identical to OM920173.1) is ignored but added at the end
+NOTE: OM920389.1 (identical to OM920135.1) is ignored but added at the end
+NOTE: OM920214.1 (identical to OM920195.1) is ignored but added at the end
+NOTE: OM920230.1 (identical to OM920195.1) is ignored but added at the end
+NOTE: OM920334.1 (identical to OM920246.1) is ignored but added at the end
+NOTE: OM920217.1 (identical to OM920076.1) is ignored but added at the end
+NOTE: OM920240.1 (identical to OM920076.1) is ignored but added at the end
+NOTE: OM920152.1 (identical to OM920107.1) is ignored but added at the end
+NOTE: OM920170.1 (identical to OM920107.1) is ignored but added at the end
+NOTE: OM920282.1 (identical to OM920107.1) is ignored but added at the end
+NOTE: OM920188.1 (identical to OM920107.1) is ignored but added at the end
+NOTE: OM920286.1 (identical to OM920107.1) is ignored but added at the end
+NOTE: OM920213.1 (identical to OM920107.1) is ignored but added at the end
+NOTE: OM920295.1 (identical to OM920107.1) is ignored but added at the end
+NOTE: OM920301.1 (identical to OM920107.1) is ignored but added at the end
+NOTE: OM920316.1 (identical to OM920107.1) is ignored but added at the end
+NOTE: OM920411.1 (identical to OM920107.1) is ignored but added at the end
+NOTE: OM920337.1 (identical to OM920179.1) is ignored but added at the end
+NOTE: OM920388.1 (identical to OM920179.1) is ignored but added at the end
+NOTE: OM920390.1 (identical to OM920179.1) is ignored but added at the end
+NOTE: OM920383.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920136.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920075.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920086.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920102.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920345.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920140.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920355.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920386.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920254.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920260.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920402.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920342.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920403.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920404.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920276.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920175.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920151.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920190.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920211.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920212.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920305.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920324.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920133.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920158.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920349.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920104.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920315.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920089.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920227.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920236.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920169.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920165.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920278.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920289.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920284.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920229.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920414.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920093.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920126.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920272.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920209.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920302.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920220.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920221.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920207.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920208.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920205.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920206.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920203.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920204.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920193.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920264.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920171.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920172.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920143.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920144.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920142.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920340.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920120.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920121.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920119.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920362.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920100.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920178.1 (identical to OM920081.1) is ignored but added at the end
+NOTE: OM920247.1 (identical to OM920095.1) is ignored but added at the end
+NOTE: OM920263.1 (identical to OM920095.1) is ignored but added at the end
+NOTE: OM920291.1 (identical to OM920095.1) is ignored but added at the end
+NOTE: OM920319.1 (identical to OM920095.1) is ignored but added at the end
+NOTE: OM920391.1 (identical to OM920095.1) is ignored but added at the end
+NOTE: OM920330.1 (identical to OM920095.1) is ignored but added at the end
+NOTE: OM920164.1 (identical to OM920149.1) is ignored but added at the end
+NOTE: OM920256.1 (identical to OM920149.1) is ignored but added at the end
+NOTE: OM920413.1 (identical to OM920149.1) is ignored but added at the end
+NOTE: OM920061.1 (identical to OM920036.1) is ignored but added at the end
+NOTE: OM920063.1 (identical to OM920057.1) is ignored but added at the end
+NOTE: OM920043.1 (identical to OM920040.1) is ignored but added at the end
+NOTE: OM920046.1 (identical to OM920040.1) is ignored but added at the end
+NOTE: OM920047.1 (identical to OM920040.1) is ignored but added at the end
+NOTE: OM920056.1 (identical to OM920040.1) is ignored but added at the end
+NOTE: OM920058.1 (identical to OM920040.1) is ignored but added at the end
+NOTE: OM920059.1 (identical to OM920040.1) is ignored but added at the end
+NOTE: OM920066.1 (identical to OM920040.1) is ignored but added at the end
+Alignment was printed to all_serotypes_aligned.fasta.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to all_serotypes_aligned.fasta.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.007 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -5042.454
+Optimal log-likelihood: -5042.259
+Rate parameters:  A-C: 1.76137  A-G: 5.06630  A-T: 2.16853  C-G: 1.33253  C-T: 16.09987  G-T: 1.00000
+Base frequencies:  A: 0.322  C: 0.200  G: 0.265  T: 0.213
+Proportion of invariable sites: 0.328
+Gamma shape alpha: 1.596
+Parameters optimization took 1 rounds (0.078 sec)
+Time for fast ML tree search: 0.351 seconds
+
+NOTE: ModelFinder requires 14 MB RAM!
+ModelFinder will test up to 484 DNA models (sample size: 1485 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         5084.972     413 10995.945    11315.239    13186.154
+  2  GTR+F+I       5035.491     414 10898.982    11220.122    13094.494
+  3  GTR+F+G4      5044.491     414 10916.983    11238.123    13112.495
+  4  GTR+F+I+G4    5041.941     415 10913.883    11236.876    13114.698
+  5  GTR+F+R2      5041.280     415 10912.560    11235.553    13113.375
+  6  GTR+F+R3      5039.685     417 10913.369    11240.091    13124.791
+ 14  GTR+F+I+R2    5039.633     416 10911.266    11236.120    13117.385
+ 15  GTR+F+I+R3    5037.956     418 10911.913    11240.509    13128.638
+ 24  SYM+I         5068.138     411 10958.277    11273.900    13137.880
+ 46  TVM+F+I       5070.638     413 10967.277    11286.571    13157.486
+ 68  TVMe+I        5086.637     410 10993.274    11307.073    13167.574
+ 90  TIM3+F+I      5038.492     412 10900.984    11218.439    13085.890
+112  TIM3e+I       5071.906     409 10961.812    11273.793    13130.808
+134  TIM2+F+I      5036.453     412 10896.905    11214.361    13081.811
+156  TIM2e+I       5068.962     409 10955.925    11267.906    13124.921
+178  TIM+F+I       5038.298     412 10900.596    11218.051    13085.502
+200  TIMe+I        5071.848     409 10961.696    11273.678    13130.693
+222  TPM3u+F+I     5072.482     411 10966.964    11282.587    13146.566
+244  TPM3+I        5089.756     408 10995.512    11305.683    13159.205
+266  TPM2u+F+I     5070.855     411 10963.711    11279.334    13143.314
+288  TPM2+I        5086.923     408 10989.846    11300.017    13153.540
+310  K3Pu+F+I      5071.939     411 10965.878    11281.502    13145.481
+332  K3P+I         5089.321     408 10994.642    11304.813    13158.336
+354  TN+F+I        5038.919     411 10899.837    11215.461    13079.440
+376  TNe+I         5072.416     408 10960.832    11271.003    13124.526
+398  HKY+F+I       5072.476     410 10964.952    11278.750    13139.251
+420  K2P+I         5089.836     407 10993.673    11302.040    13152.063
+442  F81+F+I       5185.927     409 11189.854    11501.835    13358.850
+464  JC+I          5211.027     406 11234.054    11540.625    13387.141
+Akaike Information Criterion:           TIM2+F+I
+Corrected Akaike Information Criterion: TIM2+F+I
+Bayesian Information Criterion:         TN+F+I
+Best-fit model: TN+F+I chosen according to BIC
+
+All model information printed to all_serotypes_aligned.fasta.model.gz
+CPU time for ModelFinder: 4.237 seconds (0h:0m:4s)
+Wall-clock time for ModelFinder: 4.677 seconds (0h:0m:4s)
+
+NOTE: 1 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5185.942
+2. Current log-likelihood: -5050.640
+3. Current log-likelihood: -5043.053
+4. Current log-likelihood: -5040.413
+5. Current log-likelihood: -5039.420
+6. Current log-likelihood: -5039.068
+7. Current log-likelihood: -5038.951
+Optimal log-likelihood: -5038.901
+Rate parameters:  A-C: 1.00000  A-G: 3.53401  A-T: 1.00000  C-G: 1.00000  C-T: 14.30481  G-T: 1.00000
+Base frequencies:  A: 0.322  C: 0.200  G: 0.265  T: 0.213
+Proportion of invariable sites: 0.484
+Parameters optimization took 7 rounds (0.083 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0280159 secs using 97.06% CPU
+Computing ML distances took 0.028466 sec (of wall-clock time) 0.027304 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000648022 secs using 151.2% CPU
+Computing RapidNJ tree took 0.002861 sec (of wall-clock time) 0.004623 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5080.733
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.879 second
+Computing log-likelihood of 98 initial trees ... 0.328 seconds
+Current best score: -5035.692
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5035.270
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -5035.239
+Iteration 10 / LogL: -5037.326 / Time: 0h:0m:6s
+Iteration 20 / LogL: -5035.547 / Time: 0h:0m:6s
+Finish initializing candidate tree set (20)
+Current best tree score: -5035.239 / CPU time: 1.796
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -5062.443 / Time: 0h:0m:7s (0h:0m:6s left)
+Iteration 40 / LogL: -5035.348 / Time: 0h:0m:7s (0h:0m:4s left)
+Iteration 50 / LogL: -5035.281 / Time: 0h:0m:8s (0h:0m:3s left)
+Iteration 60 / LogL: -5035.301 / Time: 0h:0m:8s (0h:0m:2s left)
+Iteration 70 / LogL: -5036.633 / Time: 0h:0m:9s (0h:0m:2s left)
+Iteration 80 / LogL: -5035.313 / Time: 0h:0m:9s (0h:0m:1s left)
+Iteration 90 / LogL: -5035.296 / Time: 0h:0m:10s (0h:0m:0s left)
+Iteration 100 / LogL: -5035.270 / Time: 0h:0m:10s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:0m:10s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5035.239
+Optimal log-likelihood: -5035.239
+Rate parameters:  A-C: 1.00000  A-G: 3.61138  A-T: 1.00000  C-G: 1.00000  C-T: 14.28230  G-T: 1.00000
+Base frequencies:  A: 0.322  C: 0.200  G: 0.265  T: 0.213
+Proportion of invariable sites: 0.484
+Parameters optimization took 1 rounds (0.008 sec)
+BEST SCORE FOUND : -5035.239
+Total tree length: 1.128
+
+Total number of iterations: 103
+CPU time used for tree search: 5.714 sec (0h:0m:5s)
+Wall-clock time used for tree search: 6.169 sec (0h:0m:6s)
+Total CPU time used: 10.101 sec (0h:0m:10s)
+Total wall-clock time used: 11.005 sec (0h:0m:11s)
+
+Analysis results written to: 
+  IQ-TREE report:                all_serotypes_aligned.fasta.iqtree
+  Maximum-likelihood tree:       all_serotypes_aligned.fasta.treefile
+  Likelihood distances:          all_serotypes_aligned.fasta.mldist
+  Screen log file:               all_serotypes_aligned.fasta.log
+
+Date and Time: Sat Dec 21 17:43:59 2024
