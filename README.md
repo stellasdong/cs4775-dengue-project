@@ -30,9 +30,9 @@ Biopython
   
 ClustalW and IQ-TREE
   
-  ClustalW: Download and install from the official site.
+  ClustalW: Download MegaX software and run ClustalW alignment.
   
-  IQ-TREE: Download and install from the official site.
+  IQ-TREE: Download and install from the official site. In order to use iqtree2 command in your command-line, the IQ-Tree bin file must be added to your path.
   
 
 
@@ -88,37 +88,15 @@ Running the Script
   
   Example:
   
-    python script.py input_file.fasta
+    python script.py input_file.txt
+
+  To replicate our trees, use tree_1.txt or tree_3.txt instead of input_file.txt.
 
 Output
 
 Terminal Output: Displays the parsed tree as an ASCII representation.
 
 File Output: Saves the ASCII tree to a file named <base_name>_output.txt.
-
-Example
-
-  Input
-  
-  A FASTA file, serotype_1.fasta, is processed as described above. The Newick file tree_1.txt contains:
-  
-  ((A,B),(C,D));
-  
-  Output
-  
-  Terminal Output:
-  
-  Tree successfully parsed:
-    _______ A
-   |
-  _|_______ B
-   |
-   |_______ C
-           |
-           D
-
-  File Output:
-  The file serotype_1_output.txt will contain the same ASCII representation.
 
 
 Error Handling
