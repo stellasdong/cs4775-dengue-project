@@ -55,9 +55,11 @@ This Python repo processes FASTA files, aligns them using ClustalW, builds phylo
   These are all the fasta files that were run in our experiment.
 
   To run IQTree, run:
+    ```
     python iq_tree_run.py fasta_name.fasta
+    ```
 
-  Replace fasta_name.fasta with any of the FASTA files above. This will generate several reports and output files from IQ-Tree. The file with the .iqtree extension is the full report plus text representation of the tree. the file with the .bionj is the Newick format of the generated tree.
+  Replace `fasta_name.fasta` with any of the FASTA files above. This will generate several reports and output files from IQ-Tree. The file with the .iqtree extension is the full report plus text representation of the tree. the file with the .bionj is the Newick format of the generated tree.
 
 **Visualizing Trees**
 
@@ -66,9 +68,11 @@ This Python repo processes FASTA files, aligns them using ClustalW, builds phylo
   The script is executed from the command line and requires a single argument: the path to the input tree file.
   
   Run:
+    ```
     python tree_gen.py nwk_file.txt
+    ```
 
-  To replicate our trees, use tree_3.txt, tree_3_2017.txt or tree_3_2018.txt instead of nwk_file.txt. Or, use the .bionj file output from IQTree. This should generate a .png file of the same name that visualizes the tree.
+  To replicate our trees, use `tree_3.txt`, `tree_3_2017.txt` or `tree_3_2018.txt` instead of `nwk_file.txt`. Or, use the .bionj file output from IQTree. This should generate a .png file of the same name that visualizes the tree.
 
 
 
