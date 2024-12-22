@@ -68,9 +68,10 @@ This Python repo processes FASTA files, aligns them using ClustalW, builds phylo
   The script is executed from the command line and requires a single argument: the path to the input tree file.
   
   Run:
-    ```
+
     python tree_gen.py nwk_file.txt
-    ```
+
+
 
   To replicate our trees, use `tree_3.txt`, `tree_3_2017.txt` or `tree_3_2018.txt` instead of `nwk_file.txt`. Or, use the .bionj file output from IQTree. This should generate a .png file of the same name that visualizes the tree.
 
