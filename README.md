@@ -80,7 +80,7 @@ Tree Construction with IQ-TREE
 
 
 Newick to ASCII Tree Conversion:
-The Newick tree files are read, visualized as ASCII trees, and saved to text files.
+The Newick tree files are read, visualized as ASCII trees using BioPython, and saved to text files.
 
 Running the Script
 
