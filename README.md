@@ -105,12 +105,6 @@ Error Handling
   
   Error: File '<input_file>' not found.
 
-Notes
-
-  Ensure ClustalW and IQ-TREE are installed and accessible from your command line.
-  
-  Only properly formatted FASTA files are supported.
-
 
 Acknowledgments
 
