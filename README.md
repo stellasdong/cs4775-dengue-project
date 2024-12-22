@@ -32,7 +32,7 @@ This Python repo processes FASTA files, aligns them using ClustalW, builds phylo
   Download and install from the [official site](http://www.iqtree.org/). In order to use iqtree2 command in your command-line, the IQ-Tree bin file must be added to your path.
   
 **ClustalW** (Optional) 
-    ClustalW: Download MegaX software and run ClustalW alignment. MegaX's ClustalW alignment tool was used to align the sequences, all fasta files in this repository were aligned  already for our experiment. 
+  Download MegaX software and run ClustalW alignment. MegaX's ClustalW alignment tool was used to align the sequences, all fasta files in this repository were aligned  already for our experiment. 
   
 
 
