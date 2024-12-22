@@ -5,7 +5,7 @@ This Python repo processes FASTA files, aligns them using ClustalW, builds phylo
 
 
 
-# Dependencies:
+### Dependencies:
 
 1. Python 3.6 or higher
 
@@ -20,7 +20,7 @@ This Python repo processes FASTA files, aligns them using ClustalW, builds phylo
    
 
 
-# Installation:
+### Installation:
 
 **Biopython**
 
@@ -36,7 +36,7 @@ This Python repo processes FASTA files, aligns them using ClustalW, builds phylo
   
 
 
-# Usage:
+### Usage:
 
 **Running IQ-Tree**
 
