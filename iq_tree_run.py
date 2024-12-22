@@ -1,12 +1,19 @@
 import subprocess
+import argparse
 
-# IQ Tree Inputs
+parser = argparse.ArgumentParser(description="Run IQ-TREE with a specified FASTA file.")
+parser.add_argument(
+    "fasta_file", 
+    type=str, 
+)
+
+args = parser.parse_args()
+
 command = [
     "iqtree2", 
-    "-s", "serotype_3_2018.fasta", 
+    "-s", args.fasta_file, 
     "-m", "MFP", 
 ]
-
 
 try:
     result = subprocess.run(command, check=True, capture_output=True, text=True)

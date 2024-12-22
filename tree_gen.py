@@ -1,32 +1,31 @@
 import argparse
 import os
 from Bio import Phylo
-from io import StringIO
+import matplotlib.pyplot as plt
 
 def convert(input_file):
     try:
         tree = Phylo.read(input_file, "newick")
-        
-        print("Tree successfully parsed:")
-        Phylo.draw_ascii(tree)
+        print("Tree successfully parsed.")
         
         base_name = os.path.splitext(input_file)[0]
-        output_file = f"{base_name}_output.txt"
+        output_image = f"{base_name}_tree.png"
         
-        ascii_tree = StringIO()
-        Phylo.draw_ascii(tree, file=ascii_tree)
-        ascii_tree_output = ascii_tree.getvalue()
+        plt.figure(figsize=(10, 8))
+        Phylo.draw(tree, do_show=False)
+        plt.savefig(output_image, format="png")
+        plt.close()
         
-        with open(output_file, 'w') as file:
-            file.write(ascii_tree_output)
-        
+        print(f"Tree image saved to '{output_image}'")
         return tree
     except FileNotFoundError:
         print(f"Error: File '{input_file}' not found.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Parse a Newick file and convert it to a tree.")
+    parser = argparse.ArgumentParser(description="Parse a Newick file and create an image of the tree.")
     parser.add_argument("input_file", help="Path to the input Newick file.")
     
     args = parser.parse_args()

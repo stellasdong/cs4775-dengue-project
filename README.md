@@ -1,11 +1,11 @@
-Comparison of Dengue Variants via Phylogenetic Organization
+## Comparison of Dengue Variants via Phylogenetic Organization
 
 This Python repo processes FASTA files, aligns them using ClustalW, builds phylogenetic trees using IQ-TREE, converts the resulting Newick-formatted tree files into ASCII trees, and saves the ASCII representations to text files. The script uses the Biopython library for tree parsing and rendering.
 
 
 
 
-Dependencies:
+# Dependencies:
 
 1. Python 3.6 or higher
 
@@ -20,31 +20,30 @@ Dependencies:
    
 
 
-Installation:
+# Installation:
 
-Biopython
+**Biopython**
 
   To install Biopython, run:
 
     pip install biopython
+
+**IQ-TREE**
+  Download and install from the [official site](http://www.iqtree.org/). In order to use iqtree2 command in your command-line, the IQ-Tree bin file must be added to your path.
   
-ClustalW and IQ-TREE
-  
-  ClustalW: Download MegaX software and run ClustalW alignment.
-  
-  IQ-TREE: Download and install from the official site. In order to use iqtree2 command in your command-line, the IQ-Tree bin file must be added to your path.
+**ClustalW** (Optional) 
+    ClustalW: Download MegaX software and run ClustalW alignment. MegaX's ClustalW alignment tool was used to align the sequences, all fasta files in this repository were aligned  already for our experiment. 
   
 
 
+# Usage:
 
+**Running IQ-Tree**
 
-
-Usage:
-
-Input Files
-
-  The script processes FASTA files and expects them to be properly formatted. Example FASTA files include:
+  The script processes FASTA files and runs the IQTree software with the FASTA file. The provided FASTA files include:
   
+    all_serotypes_aligned.fasta
+
     serotype_1.fasta
   
     serotype_3.fasta
@@ -53,62 +52,29 @@ Input Files
   
     serotype_3_2018.fasta
 
+  These are all the fasta files that were run in our experiment.
 
+  To run IQTree, run:
+    python iq_tree_run.py fasta_name.fasta
 
+  Replace fasta_name.fasta with any of the FASTA files above. This will generate several reports and output files from IQ-Tree. The file with the .iqtree extension is the full report plus text representation of the tree. the file with the .bionj is the Newick format of the generated tree.
 
+**Visualizing Trees**
 
+  We utilized multiple tools to visualize our resulting trees. We used an online software [iTOL](https://itol.embl.de/upload.cgi) to generate our large trees. This was especially useful for our serotype 1 dataset. We also used BioPhython to generate readable trees for our smaller datasets.
 
-Workflow:
-
-Alignment with ClustalW
-  The FASTA files are aligned using ClustalW to create multiple sequence alignments.
-
-Tree Construction with IQ-TREE
-  The aligned files are processed with IQ-TREE using the following command:
-
-    iqtree2 -s <aligned_file.fasta> -m MFP
-
-  This generates Newick-formatted tree files. Example output files:
-
-    tree_1.txt
+  The script is executed from the command line and requires a single argument: the path to the input tree file.
   
-    tree_3.txt
+  Run:
+    python tree_gen.py nwk_file.txt
 
+  To replicate our trees, use tree_3.txt, tree_3_2017.txt or tree_3_2018.txt instead of nwk_file.txt. Or, use the .bionj file output from IQTree. This should generate a .png file of the same name that visualizes the tree.
 
-
-
-
-
-Newick to ASCII Tree Conversion:
-The Newick tree files are read, visualized as ASCII trees using BioPython, and saved to text files.
-
-Running the Script
-
-  The script is executed from the command line and requires a single argument: the path to the input FASTA file.
-  
-  Example:
-  
-    python script.py input_file.txt
-
-  To replicate our trees, use tree_1.txt or tree_3.txt instead of input_file.txt.
-
-Output
-
-Terminal Output: Displays the parsed tree as an ASCII representation.
-
-File Output: Saves the ASCII tree to a file named <base_name>_output.txt.
-
-
-Error Handling
-
-  If the specified input file does not exist, the script will print:
-  
-  Error: File '<input_file>' not found.
 
 
 Acknowledgments
 
   The Biopython library (https://biopython.org/) is used for tree parsing and visualization.
   
-  ClustalW and IQ-TREE are essential tools for alignment and tree construction.
+  IQ-TREE is an essential tools for tree construction.
 
