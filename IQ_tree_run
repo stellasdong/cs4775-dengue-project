@@ -1,0 +1,21 @@
+import subprocess
+
+# IQ Tree Inputs
+command = [
+    "iqtree", 
+    "-s", "alignment.fasta", 
+    "-m", "GTR+G", 
+    "-bb", "1000", 
+    "-alrt", "1000"
+]
+
+
+try:
+    result = subprocess.run(command, check=True, capture_output=True, text=True)
+    print("IQ-TREE finished successfully.")
+    print("Standard Output:", result.stdout)
+    print("Standard Error:", result.stderr)
+except subprocess.CalledProcessError as e:
+    print("Error occurred:", e)
+    print("Standard Output:", e.stdout)
+    print("Standard Error:", e.stderr)
