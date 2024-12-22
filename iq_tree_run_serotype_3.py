@@ -2,7 +2,7 @@ import subprocess
 
 # IQ Tree Inputs
 command = [
-    "iqtree", 
+    "iqtree2", 
     "-s", "serotype_3.fasta", 
     "-m", "MFP", 
 ]
