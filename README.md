@@ -41,7 +41,7 @@ This Python repo processes FASTA files, aligns them using ClustalW, builds phylo
 **Running IQ-Tree**
 
   The script processes FASTA files and runs the IQTree software with the FASTA file. The provided FASTA files include:
-  
+
     all_serotypes_aligned.fasta
 
     serotype_1.fasta
@@ -55,9 +55,9 @@ This Python repo processes FASTA files, aligns them using ClustalW, builds phylo
   These are all the fasta files that were run in our experiment.
 
   To run IQTree, run:
-    ```
+
     python iq_tree_run.py fasta_name.fasta
-    ```
+
 
   Replace `fasta_name.fasta` with any of the FASTA files above. This will generate several reports and output files from IQ-Tree. The file with the .iqtree extension is the full report plus text representation of the tree. the file with the .bionj is the Newick format of the generated tree.
 
