@@ -4,7 +4,7 @@ import subprocess
 command = [
     "iqtree", 
     "-s", "alignment.fasta", 
-    "-m", "MPS", 
+    "-m", "MFP", 
 ]
 
 
