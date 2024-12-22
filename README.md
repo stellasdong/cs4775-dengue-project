@@ -74,12 +74,3 @@ This Python repo processes FASTA files, aligns them using ClustalW, builds phylo
 
 
   To replicate our trees, use `tree_3.txt`, `tree_3_2017.txt` or `tree_3_2018.txt` instead of `nwk_file.txt`. Or, use the .bionj file output from IQTree. This should generate a .png file of the same name that visualizes the tree.
-
-
-
-Acknowledgments
-
-  The Biopython library (https://biopython.org/) is used for tree parsing and visualization.
-  
-  IQ-TREE is an essential tools for tree construction.
-
